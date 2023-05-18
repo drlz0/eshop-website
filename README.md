@@ -9,5 +9,5 @@
 * Input validation
 
 ## Design patterns
-***Factory Method Pattern*** for handling difference in products in backend. <br><br>
+***Factory Method Pattern*** for handling difference in products in backend. <br>
 ***SOLID*** for React.js frontend.
