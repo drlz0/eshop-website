@@ -3,6 +3,7 @@
 * Add new items
 * Delete items
 * Display items
+* Navigation bar
 * Add items to cart
 * Register
 * Login
