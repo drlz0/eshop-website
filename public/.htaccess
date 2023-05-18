@@ -1,0 +1,41 @@
+# Enable the rewrite engine
+RewriteEngine On
+
+# Set the base path (if your project is not in the root directory)
+# RewriteBase /your-project-path/
+
+# Redirect all requests to the index.html file
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ /index.html [L]
+
+# Set the default charset to UTF-8
+AddDefaultCharset UTF-8
+
+# Enable server-side caching for certain file types
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType text/css "access plus 1 month"
+    ExpiresByType application/javascript "access plus 1 month"
+    ExpiresByType image/jpeg "access plus 1 year"
+    ExpiresByType image/png "access plus 1 year"
+    ExpiresByType image/gif "access plus 1 year"
+</IfModule>
+
+# Set server-side caching headers
+<IfModule mod_headers.c>
+    <FilesMatch "\.(css|js|jpg|jpeg|png|gif)$">
+        Header set Cache-Control "public"
+    </FilesMatch>
+</IfModule>
+
+# Prevent directory listing
+Options -Indexes
+
+# Set PHP configuration (if using PHP)
+# php_value upload_max_filesize 20M
+# php_value post_max_size 20M
+# php_value max_execution_time 300
+
+# Disable server signature
+ServerSignature Off

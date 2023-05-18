@@ -1,0 +1,43 @@
+.register-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.register-container h2 {
+  text-align: center;
+}
+
+.register-container form {
+  display: grid;
+  gap: 10px;
+}
+
+.register-container .form-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.register-container .form-field input[type="text"],
+.register-container .form-field input[type="password"] {
+  padding: 8px;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.register-container .form-field input[type="password"] {
+  margin-top: 5px;
+}
+
+.register-container button[type="submit"] {
+  width: 50%;
+  margin: 20px auto 0;
+}
+
+.register-container .password-description {
+  font-size: 12px;
+  font-style: italic;
+  text-align: center;
+  margin-top: 5px;
+}

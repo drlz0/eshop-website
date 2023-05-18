@@ -1,0 +1,34 @@
+/* Style for h1 Product Add and two buttons */
+
+.add-product-container {
+  padding: 20px;
+}
+
+.add-product-h1-btn {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border-bottom: 1px solid #000;
+  margin-bottom: 20px;
+}
+
+.add-product-h1-btn h1 {
+  margin: 0;
+}
+
+.add-product-h1-btn button {
+  margin: 0;
+}
+
+.add-product-h1-btn .cancel-btn {
+  margin-left: 10px;
+}
+
+.add-product-h1-btn .save-btn {
+  margin-left: auto;
+}
+
+.vertical-line {
+  border-bottom: 1px solid #000;
+  margin-top: 20px;
+}
